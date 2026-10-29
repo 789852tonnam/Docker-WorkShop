@@ -32,7 +32,7 @@ jobs:
             image-ref: ${{ env.IMAGE_NAME }}:${{ github.sha }}
             severity: CRITICAL
             exit-code: '1'
-            ignore-unfixed: trus
+            ignore-unfixed: true
 
       # log in to Docker Hub using DOCKERHUB_USERNAME and DOCKERHUB_TOKEN secrets.
       - name: Log in to Docker Hub
